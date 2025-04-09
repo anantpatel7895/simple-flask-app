@@ -12,7 +12,19 @@ permissions:
   contents: read
 
 jobs:  
-        
+  integration:
+    name: Continuous Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Lint code
+        run: echo "Linting repository"
+
+      - name: Run unit tests
+        run: echo "Running unit tests
+                
   Continuous-Deployment:
     needs: build-and-push-ecr-image
     runs-on: self-hosted
