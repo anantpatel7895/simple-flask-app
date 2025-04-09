@@ -24,9 +24,8 @@ jobs:
 
       - name: Run unit tests
         run: echo "Running unit tests
-                
+
   Continuous-Deployment:
-    needs: build-and-push-ecr-image
     runs-on: self-hosted
     steps:
       - name: Checkout
