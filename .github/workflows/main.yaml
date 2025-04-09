@@ -23,4 +23,4 @@ jobs:
         run: |
           echo "Cloned files are in the following directory:"
           pwd
-          ls -al /home/runner/work/my-app/my-app  # Change this path based on your repo name
+        
